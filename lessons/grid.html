@@ -28,8 +28,16 @@
     /* the grid template columns peoperty defines part of the structure of a grid, for example how many columns. To specify two rows, we use two parameters to do so. 
     so far then: (1) specify display: grid, then set up grid-template-columns: for the grid in question*/
 
-    grid-template-rows: 50px 50px;
-    /* it is now possible to add rwos also (so now we have a square with three columns and two rows*/
+    /* grid-template-rows: 50px 50px; */
+    /* it is now possible to add rows also (so now we have a square with three columns and two rows*/
+
+    /* grid-template-columns can take specific units of measure to manipulate the shorthand layout. For example, 
+        fr: sets the column or row to a fraction of the available space
+        auto: sets the column or row to the width or height of its content automatically
+        %: adjusts the column or row to the percent width of its container
+        grid-template-columns: auto 50px 10% 2fr 1fr;
+     */
+    grid-template-columns: 1fr 100px 2fr;
   }
 </style>
 
