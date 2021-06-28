@@ -121,7 +121,14 @@
 
         (this will mathematically calculate how many rows or columns will fit)
 
+        You can create flexible layouts when combining auto-fill with minmax
         
+
+        you can do the same with auto-fit.
+         
+         grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+
+         What this will do is collaposes empty rows or columns and then stretches the cells to fit the size of the grid parent container.
 
 
   */
