@@ -69,6 +69,27 @@
         ---justify-items--- this works for ALL items within the grid (horizontal)
         ---align-items--- this works for ALL items within th grid (vertical)
   */
+
+  /* 
+  
+    You can group cells of your grid together into an area and give the area a custom name. Do this by uding grid-template-areas on the container: .;
+    i.e, 
+        grid-template-areas:
+            "header header header"
+            "advert content content"
+            "footer footer footer"
+
+    The code above merges the top three cells together into an area named header, the bottom three cells into a footer area, and it makes two areas in the middle row; advert and content. Every word in the 'grid matrix' represents the grid system in question. 
+
+    once this has been completed, (the grid set up) you are welcome to now add 
+        
+        .element {
+            grid-area: header;
+        }
+
+    This lets the grid know that you would like the targeted element to go into the grid area that you have predefined as 'header'
+
+  */
 </style>
 
 <div class="container">
