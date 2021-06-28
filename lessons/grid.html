@@ -87,7 +87,26 @@
             grid-area: header;
         }
 
-    This lets the grid know that you would like the targeted element to go into the grid area that you have predefined as 'header'
+    This lets the grid know that you would like the targeted element to go into the grid area that you have predefined as 'header'.
+
+
+    The grid area can also be used without grid-template-areas. For example:
+
+        Grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;
+
+        e.g: 
+            grid-area: 1/1/4/4; (starts at far left for both x,y) (ends at 4,4 for both x,y)
+
+        
+        Grid template rows allow you to refactor your code to minimize repetition.
+
+            e.g:
+
+        grid-template-rows: repeat(100, 50px);
+        
+        You can also repeat multiple values with the repeat function and insert the function amongst other values when defining a grid structure. Here's what that looks like:
+
+        grid-template-columns: repeat(2, 1fr 50px) 20px;
 
   */
 </style>
