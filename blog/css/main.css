@@ -4,19 +4,21 @@
   padding: 0px;
   list-style-type: none;
   text-decoration: none;
-  color: #000000;
   scroll-behavior: smooth;
+  box-sizing: inherent;
+}
+html {
+  box-sizing: border-box;
+  color: #000000;
+}
+a {
+  color: #000000;
 }
 /* set no margin class */
 .noMargin {
   margin-right: 0;
 }
-/* set styles for main site */
-.modalMode {
-  background-color: #222;
-  opacity: 0.5;
-  border: none !important;
-}
+/* set styles for modals */
 
 /* set site font families and generic sizes" */
 h1,
@@ -190,7 +192,9 @@ footer h1 {
 .breadcrumbContainer ul li {
   line-height: 28px;
 }
-
+.crumbline span {
+  color: tomato;
+}
 .breadcrumbContainer ul li a:hover,
 .crumbline a:hover {
   text-decoration: underline;
@@ -210,4 +214,16 @@ footer h1 {
 .footerTitle {
   font-weight: bold;
   margin-bottom: 18px;
+}
+
+/* overlay properties (a 100% w/h fixed container with blur and opacity */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
