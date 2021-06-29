@@ -4,13 +4,13 @@
   padding: 0px;
   list-style-type: none;
   text-decoration: none;
+  color: #000000;
 }
 
 /* set styles for main site */
 #body {
   width: 1920px; /*this is the max static width for site */
   margin: 0 auto;
-  padding: 0 40px; /* total site is 2000 max width */
 }
 
 /* set site font families and generic sizes" */
@@ -19,7 +19,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+header h1 a {
   font-family: roboto;
   font-size: 24px;
 }
@@ -29,37 +30,39 @@ a {
   font-size: 12px;
 }
 
-header,
-footer {
-  width: 100%;
-}
-
 /* create a float layout for the header/nav */
 header h1,
 header nav,
-header nav ul,
 header nav ul li {
   float: left;
 }
 header p {
+  width: 25%;
+  background-color: orange;
   float: right;
+  text-align: center;
 }
 header {
-  overflow: auto;
   height: 344px;
+  background-color: red;
   line-height: 344px;
 }
-
+header h1 {
+  width: 25%;
+  text-align: center;
+  text-transform: uppercase;
+}
 header nav {
-  width: 800px;
-  margin-left: 500px;
+  width: 50%;
+  text-transform: capitalize;
   background-color: red;
 }
-
+nav ul li {
+  margin-right: 28.5%;
+}
+.noMargin {
+  margin-right: 0;
+}
 main {
   clear: both;
-}
-
-footer {
-  background-color: #f4f4f4;
 }
