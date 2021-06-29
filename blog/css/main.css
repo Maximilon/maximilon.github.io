@@ -5,6 +5,7 @@
   list-style-type: none;
   text-decoration: none;
   color: #000000;
+  scroll-behavior: smooth;
 }
 /* set no margin class */
 .noMargin {
@@ -23,12 +24,15 @@ h3,
 h4,
 h5,
 h6,
-header h1 a {
+header h1 a,
+footer h1 a {
   font-family: roboto;
-  font-size: 24px;
+  font-size: 24px !important;
 }
+
 p,
-a {
+a,
+li {
   font-family: "Open Sans";
   font-size: 12px;
   letter-spacing: 1px;
@@ -44,7 +48,7 @@ header p {
   width: 30%;
   float: right;
   text-align: center;
-  background-color: #79c186;
+  /* background-color: #79c186; */
 }
 header {
   height: 480px;
@@ -55,7 +59,7 @@ header h1 {
   width: 30%;
   text-align: center;
   text-transform: uppercase;
-  background-color: #ffb134;
+  /* background-color: #ffb134; */
 }
 header h1 a:hover {
   cursor: pointer;
@@ -63,23 +67,24 @@ header h1 a:hover {
 header nav {
   width: 40%;
   text-transform: capitalize;
-  background-color: #aed6a8;
+  /* background-color: #aed6a8; */
 }
 header p a,
-footer p a {
+.portfolio a {
   border: 1px solid #e4e4e4;
   padding: 20px;
   text-transform: capitalize;
 }
 header p a:hover,
-footer p a:hover {
+.portfolio a:hover {
   border-color: #000000;
 }
 nav {
   height: 479.5px;
 }
 nav ul li {
-  margin: 0 10%;
+  width: 33%;
+  text-align: center;
 }
 nav ul li a {
   padding: 20px 0px;
@@ -91,7 +96,6 @@ nav ul li a:hover,
 main {
   clear: both;
   /*    background-color: #929d48; */
-  padding: 1% 0;
 }
 /*create a container to hold all of the blog cards and center it */
 .blogCardsContainer {
@@ -103,21 +107,23 @@ main {
   height: 25%;
   padding: 10%;
   /* border: 1px solid #ffffff; */
-  text-transform: capitalize;
 }
 .blogCards p {
   margin: 5% 0;
   font-size: 16px;
   letter-spacing: 1px;
+  line-height: 28px;
 }
 .blogCards h2 {
   font-size: 32px !important;
+  text-transform: capitalize;
 }
 .blogCards a {
   display: block;
-  margin-top: 17.5%;
+  margin-top: 12.5%;
   text-align: right !important;
-  opacity: 0.78;
+  color: #666;
+  text-transform: capitalize;
 }
 .blogCards:hover {
   border: 1px solid #000000;
@@ -129,58 +135,69 @@ main {
 }
 
 /* Footer styles */
-/* .breadcrumb {
-  background-color: rebeccapurple;
-  float: left;
-  width: 40%;
-} */
 
 footer {
   overflow: auto;
   height: 640px;
-  margin-top: 80px;
+  background-color: #f4f4f4;
+  margin-top: 180px;
 }
 footer h1 {
+  margin-top: 180px;
   width: 30%;
   text-align: center;
   text-transform: uppercase;
   float: left;
-  height: 100%;
-  padding-top: 160px;
 }
 .breadcrumbContainer {
   float: left;
   width: 40%;
-  background-color: #aed6a8;
+  /* background-color: #aed6a8; */
 }
 
-footer p {
+.portfolio {
   width: 30%;
   float: right;
-  height: 640px;
-  padding-top: 160px;
   text-align: center;
-  background-color: #ffb134;
+  margin-top: 180px;
+  /* background-color: #ffb134; */
 }
 
-footer h1 {
+/* footer h1 {
   background-color: #79c186;
-}
+} */
 
 .breadcrumbContainer {
-  height: 640px;
+  margin-top: 180px;
 }
 .breadcrumbContainer ul {
   float: left;
-  margin: 0 7.5%;
+  width: 23%;
+  margin: 0 1%;
   text-transform: capitalize;
-  margin-top: 160px;
 }
 
 .breadcrumbContainer ul li {
-  margin-bottom: 10px;
+  line-height: 28px;
+}
+
+.breadcrumbContainer ul li a:hover,
+.crumbline a:hover {
+  text-decoration: underline;
+}
+
+.crumbline {
+  clear: both;
+  text-align: center;
+  padding-top: 120px;
+  color: #666;
+  letter-spacing: 1px;
+}
+.crumbline a {
+  color: #666;
 }
 
 .footerTitle {
   font-weight: bold;
+  margin-bottom: 18px;
 }
