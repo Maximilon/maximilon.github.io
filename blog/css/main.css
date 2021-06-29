@@ -31,6 +31,7 @@ p,
 a {
   font-family: "Open Sans";
   font-size: 12px;
+  letter-spacing: 1px;
 }
 
 /* create a float layout for the header/nav */
@@ -47,6 +48,7 @@ header p {
 header {
   height: 320px;
   line-height: 320px;
+  opacity: 0.9;
 }
 header h1 {
   width: 30%;
@@ -61,22 +63,22 @@ header nav {
   text-transform: capitalize;
 }
 header p a {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #e4e4e4;
   padding: 20px;
   text-transform: capitalize;
 }
 header p a:hover {
-  color: #f4f4f4;
   border-color: #000000;
 }
 nav ul li {
-  margin-right: 27.3%;
+  margin-right: 26.33%;
 }
 nav ul li a {
   padding: 20px 0px;
 }
-nav ul li a:hover {
-  border-bottom: solid 1px #f4f4f4;
+nav ul li a:hover,
+.activeNav {
+  border-bottom: solid 1px #000000;
 }
 main {
   clear: both;
@@ -88,16 +90,29 @@ main {
 }
 .blogCards {
   height: 25%;
-  padding: 5%;
+  padding: 10%;
   margin: 5% 0px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #ffffff;
   text-transform: capitalize;
 }
 .blogCards p {
   margin: 5% 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.blogCards h2 {
+  font-size: 32px !important;
 }
 .blogCards a {
   display: block;
   margin-top: 17.5%;
   text-align: right !important;
+  opacity: 0.78;
+}
+.blogCards:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.featuredBlogCard {
+  border: solid 1px #e4e4e4;
 }
