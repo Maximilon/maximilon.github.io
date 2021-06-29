@@ -47,7 +47,7 @@ header p {
 }
 header {
   height: 344px;
-  background-color: red;
+  background-color: gold;
   line-height: 344px;
 }
 header h1 {
@@ -83,4 +83,10 @@ nav ul li a:hover {
 }
 main {
   clear: both;
+}
+
+/*create a container to hold all of the blog cards and center it */
+.blogCards {
+  width: 50%;
+  height: ;
 }
