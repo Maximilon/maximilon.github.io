@@ -12,10 +12,11 @@
   margin-right: 0;
 }
 /* set styles for main site */
-/* #body {
-  width: 1920px; 
-  margin: 0 auto;
-} */
+.modalMode {
+  background-color: #222;
+  opacity: 0.5;
+  border: none !important;
+}
 
 /* set site font families and generic sizes" */
 h1,
