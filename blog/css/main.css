@@ -227,3 +227,42 @@ footer h1 {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+.hidden {
+  display: none;
+}
+
+.modalOne {
+  position: fixed;
+  overflow: scroll;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.closeModal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal h2 {
+  font-size: 64px !important;
+}
+.modal p {
+  font-size: 18px;
+  line-height: 36px;
+  margin: 5% 0;
+}
