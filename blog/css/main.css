@@ -40,18 +40,16 @@ nav ul li {
   float: left;
 }
 header p {
-  width: 25%;
-  background-color: orange;
+  width: 30%;
   float: right;
   text-align: center;
 }
 header {
-  height: 344px;
-  background-color: gold;
-  line-height: 344px;
+  height: 320px;
+  line-height: 320px;
 }
 header h1 {
-  width: 25%;
+  width: 30%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -59,9 +57,8 @@ header h1 a:hover {
   cursor: pointer;
 }
 header nav {
-  width: 50%;
+  width: 40%;
   text-transform: capitalize;
-  background-color: red;
 }
 header p a {
   border: 1px solid #f4f4f4;
@@ -73,7 +70,7 @@ header p a:hover {
   border-color: #000000;
 }
 nav ul li {
-  margin-right: 28.4%;
+  margin-right: 27.3%;
 }
 nav ul li a {
   padding: 20px 0px;
@@ -84,9 +81,23 @@ nav ul li a:hover {
 main {
   clear: both;
 }
-
 /*create a container to hold all of the blog cards and center it */
+.blogCardsContainer {
+  width: 40%;
+  margin: 0 auto;
+}
 .blogCards {
-  width: 50%;
-  height: ;
+  height: 25%;
+  padding: 5%;
+  margin: 5% 0px;
+  border: 1px solid #f4f4f4;
+  text-transform: capitalize;
+}
+.blogCards p {
+  margin: 5% 0;
+}
+.blogCards a {
+  display: block;
+  margin-top: 17.5%;
+  text-align: right !important;
 }
