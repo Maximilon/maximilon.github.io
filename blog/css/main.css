@@ -11,10 +11,10 @@
   margin-right: 0;
 }
 /* set styles for main site */
-#body {
-  width: 1920px; /*this is the max static width for site */
+/* #body {
+  width: 1920px; 
   margin: 0 auto;
-}
+} */
 
 /* set site font families and generic sizes" */
 h1,
@@ -44,16 +44,18 @@ header p {
   width: 30%;
   float: right;
   text-align: center;
+  background-color: #79c186;
 }
 header {
-  height: 320px;
-  line-height: 320px;
-  opacity: 0.9;
+  height: 480px;
+  line-height: 480px;
+  /* opacity: 0.78; */
 }
 header h1 {
   width: 30%;
   text-align: center;
   text-transform: uppercase;
+  background-color: #ffb134;
 }
 header h1 a:hover {
   cursor: pointer;
@@ -61,17 +63,20 @@ header h1 a:hover {
 header nav {
   width: 40%;
   text-transform: capitalize;
+  background-color: #aed6a8;
 }
-header p a {
+header p a,
+footer p a {
   border: 1px solid #e4e4e4;
   padding: 20px;
   text-transform: capitalize;
 }
-header p a:hover {
+header p a:hover,
+footer p a:hover {
   border-color: #000000;
 }
 nav ul li {
-  margin-right: 26.33%;
+  margin-right: 25%;
 }
 nav ul li a {
   padding: 20px 0px;
@@ -91,7 +96,7 @@ main {
 .blogCards {
   height: 25%;
   padding: 10%;
-  margin: 5% 0px;
+  margin: 10% 0px;
   border: 1px solid #ffffff;
   text-transform: capitalize;
 }
@@ -115,4 +120,40 @@ main {
 }
 .featuredBlogCard {
   border: solid 1px #e4e4e4;
+}
+
+/* Footer styles */
+/* .breadcrumb {
+  background-color: rebeccapurple;
+  float: left;
+  width: 40%;
+} */
+
+footer {
+  overflow: auto;
+  height: 640px;
+}
+footer h1 {
+  width: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  float: left;
+  line-height: 640px;
+}
+.breadcrumbContainer {
+  float: left;
+  width: 40%;
+  background-color: #aed6a8;
+}
+
+footer p {
+  width: 30%;
+  float: right;
+  line-height: 640px;
+  text-align: center;
+  background-color: #ffb134;
+}
+
+footer h1 {
+  background-color: #79c186;
 }
