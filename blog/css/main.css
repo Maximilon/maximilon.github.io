@@ -6,7 +6,10 @@
   text-decoration: none;
   color: #000000;
 }
-
+/* set no margin class */
+.noMargin {
+  margin-right: 0;
+}
 /* set styles for main site */
 #body {
   width: 1920px; /*this is the max static width for site */
@@ -32,8 +35,8 @@ a {
 
 /* create a float layout for the header/nav */
 header h1,
-header nav,
-header nav ul li {
+nav,
+nav ul li {
   float: left;
 }
 header p {
@@ -52,16 +55,31 @@ header h1 {
   text-align: center;
   text-transform: uppercase;
 }
+header h1 a:hover {
+  cursor: pointer;
+}
 header nav {
   width: 50%;
   text-transform: capitalize;
   background-color: red;
 }
-nav ul li {
-  margin-right: 28.5%;
+header p a {
+  border: 1px solid #f4f4f4;
+  padding: 20px;
+  text-transform: capitalize;
 }
-.noMargin {
-  margin-right: 0;
+header p a:hover {
+  color: #f4f4f4;
+  border-color: #000000;
+}
+nav ul li {
+  margin-right: 28.4%;
+}
+nav ul li a {
+  padding: 20px 0px;
+}
+nav ul li a:hover {
+  border-bottom: solid 1px #f4f4f4;
 }
 main {
   clear: both;
