@@ -232,7 +232,8 @@ footer h1 {
   display: none;
 }
 
-.modalOne {
+.modalOne,
+.modalTwo {
   position: fixed;
   overflow: scroll;
   height: 70%;
@@ -247,7 +248,8 @@ footer h1 {
   z-index: 10;
 }
 
-.closeModal {
+.closeModal1,
+.closeModal2 {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
@@ -265,4 +267,11 @@ footer h1 {
   font-size: 18px;
   line-height: 36px;
   margin: 5% 0;
+}
+
+/* this will adapt the scroll behavior when the model is open */
+/* see: https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/ */
+.modalScroll {
+  height: 100vh;
+  overflow-y: hidden;
 }
