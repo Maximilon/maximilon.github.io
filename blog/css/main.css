@@ -23,7 +23,43 @@ h6 {
   font-family: roboto;
   font-size: 24px;
 }
-p {
+p,
+a {
   font-family: "Open Sans";
   font-size: 12px;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+/* create a float layout for the header/nav */
+header h1,
+header nav,
+header nav ul,
+header nav ul li {
+  float: left;
+}
+header p {
+  float: right;
+}
+header {
+  overflow: auto;
+  height: 344px;
+  line-height: 344px;
+}
+
+header nav {
+  width: 800px;
+  margin-left: 500px;
+  background-color: red;
+}
+
+main {
+  clear: both;
+}
+
+footer {
+  background-color: #f4f4f4;
 }
