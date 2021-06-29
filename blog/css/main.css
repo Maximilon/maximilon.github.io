@@ -51,8 +51,8 @@ header p {
   /* background-color: #79c186; */
 }
 header {
-  height: 480px;
-  line-height: 480px;
+  height: 320px;
+  line-height: 320px;
   /* opacity: 0.78; */
 }
 header h1 {
@@ -79,9 +79,7 @@ header p a:hover,
 .portfolio a:hover {
   border-color: #000000;
 }
-nav {
-  height: 479.5px;
-}
+
 nav ul li {
   width: 33%;
   text-align: center;
@@ -93,9 +91,20 @@ nav ul li a:hover,
 .activeNav {
   border-bottom: solid 1px #000000;
 }
+aside {
+  width: 30%;
+  height: 900px;
+  text-align: center;
+  float: left;
+}
 main {
   clear: both;
   /*    background-color: #929d48; */
+}
+aside section {
+  width: 40%;
+  margin: 0 auto;
+  text-align: justify;
 }
 /*create a container to hold all of the blog cards and center it */
 .blogCardsContainer {
@@ -120,7 +129,7 @@ main {
 }
 .blogCards a {
   display: block;
-  margin-top: 12.5%;
+  /* margin-top: 12.5%; */
   text-align: right !important;
   color: #666;
   text-transform: capitalize;
