@@ -7,3 +7,23 @@
 }
 
 /* set styles for main site */
+#body {
+  width: 1920px; /*this is the max static width for site */
+  margin: 0 auto;
+  padding: 0 40px; /* total site is 2000 max width */
+}
+
+/* set site font families and generic sizes" */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: roboto;
+  font-size: 24px;
+}
+p {
+  font-family: "Open Sans";
+  font-size: 12px;
+}
