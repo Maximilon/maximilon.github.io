@@ -1,0 +1,7 @@
+/* create a declaration block to clear default browser properties */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+}
