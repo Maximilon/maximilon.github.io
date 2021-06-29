@@ -76,7 +76,7 @@ footer p a:hover {
   border-color: #000000;
 }
 nav ul li {
-  margin-right: 25%;
+  margin: 0 10%;
 }
 nav ul li a {
   padding: 20px 0px;
@@ -156,4 +156,22 @@ footer p {
 
 footer h1 {
   background-color: #79c186;
+}
+
+.breadcrumbContainer {
+  height: 640px;
+}
+.breadcrumbContainer ul {
+  float: left;
+  margin: 0 5%;
+  text-transform: capitalize;
+  margin-top: 240px;
+}
+
+.breadcrumbContainer ul li {
+  margin-bottom: 10px;
+}
+
+.footerTitle {
+  font-weight: bold;
 }
