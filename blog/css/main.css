@@ -75,6 +75,9 @@ header p a:hover,
 footer p a:hover {
   border-color: #000000;
 }
+nav {
+  height: 479.5px;
+}
 nav ul li {
   margin: 0 10%;
 }
@@ -87,6 +90,8 @@ nav ul li a:hover,
 }
 main {
   clear: both;
+  /*    background-color: #929d48; */
+  padding: 1% 0;
 }
 /*create a container to hold all of the blog cards and center it */
 .blogCardsContainer {
@@ -94,10 +99,10 @@ main {
   margin: 0 auto;
 }
 .blogCards {
+  margin-top: 10%;
   height: 25%;
   padding: 10%;
-  margin: 10% 0px;
-  border: 1px solid #ffffff;
+  /* border: 1px solid #ffffff; */
   text-transform: capitalize;
 }
 .blogCards p {
@@ -118,7 +123,8 @@ main {
   border: 1px solid #000000;
   cursor: pointer;
 }
-.featuredBlogCard {
+.featuredBlogCard,
+.blogCards {
   border: solid 1px #e4e4e4;
 }
 
@@ -132,13 +138,15 @@ main {
 footer {
   overflow: auto;
   height: 640px;
+  margin-top: 80px;
 }
 footer h1 {
   width: 30%;
   text-align: center;
   text-transform: uppercase;
   float: left;
-  line-height: 640px;
+  height: 100%;
+  padding-top: 160px;
 }
 .breadcrumbContainer {
   float: left;
@@ -149,7 +157,8 @@ footer h1 {
 footer p {
   width: 30%;
   float: right;
-  line-height: 640px;
+  height: 640px;
+  padding-top: 160px;
   text-align: center;
   background-color: #ffb134;
 }
@@ -163,9 +172,9 @@ footer h1 {
 }
 .breadcrumbContainer ul {
   float: left;
-  margin: 0 5%;
+  margin: 0 7.5%;
   text-transform: capitalize;
-  margin-top: 240px;
+  margin-top: 160px;
 }
 
 .breadcrumbContainer ul li {
