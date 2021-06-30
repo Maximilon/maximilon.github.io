@@ -1,0 +1,347 @@
+/* create a declaration block to clear default browser properties */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  box-sizing: inherent;
+}
+html {
+  box-sizing: border-box;
+  color: #000000;
+}
+a {
+  color: #000000;
+}
+/* set no margin class */
+.noMargin {
+  margin-right: 0;
+}
+/* set styles for modals */
+
+/* set site font families and generic sizes" */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header h1 a,
+footer h1 a {
+  font-family: roboto;
+  font-size: 24px !important;
+}
+
+p,
+a,
+li {
+  font-family: "Open Sans";
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* create a float layout for the header/nav */
+header h1,
+nav,
+nav ul li {
+  float: left;
+}
+header p {
+  width: 30%;
+  float: right;
+  text-align: center;
+  /* background-color: #79c186; */
+}
+header {
+  height: 320px;
+  line-height: 320px;
+  /* opacity: 0.78; */
+}
+header h1 {
+  width: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  /* background-color: #ffb134; */
+}
+header h1 a:hover {
+  cursor: pointer;
+}
+header nav {
+  width: 40%;
+  text-transform: capitalize;
+  /* background-color: #aed6a8; */
+}
+header p a,
+.portfolio a {
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  text-transform: capitalize;
+}
+header p a:hover,
+.portfolio a:hover {
+  border-color: #000000;
+}
+
+nav ul li {
+  width: 33%;
+  text-align: center;
+}
+nav ul li a {
+  padding: 20px 0px;
+}
+nav ul li a:hover,
+.activeNav {
+  border-bottom: solid 1px #000000;
+}
+aside {
+  width: 30%;
+  height: 900px;
+  text-align: center;
+  float: left;
+}
+main {
+  clear: both;
+  /*    background-color: #929d48; */
+}
+aside section {
+  width: 40%;
+  margin: 0 auto;
+  text-align: justify;
+}
+/*create a container to hold all of the blog cards and center it */
+.blogCardsContainer {
+  width: 50%;
+  margin: 0 auto;
+}
+.blogCards {
+  margin-top: 10%;
+  height: 25%;
+  padding: 10%;
+  /* border: 1px solid #ffffff; */
+}
+.blogCards p {
+  margin: 5% 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.blogCards h2 {
+  font-size: 32px !important;
+  text-transform: capitalize;
+}
+.blogCards a {
+  display: block;
+  /* margin-top: 12.5%; */
+  text-align: right !important;
+  color: #666;
+  text-transform: capitalize;
+}
+.blogCards:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.featuredBlogCard,
+.blogCards {
+  border: solid 1px #e4e4e4;
+}
+
+/* Footer styles */
+
+footer {
+  overflow: auto;
+  height: 640px;
+  background-color: #f4f4f4;
+  margin-top: 180px;
+}
+footer h1 {
+  margin-top: 180px;
+  width: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  float: left;
+}
+.breadcrumbContainer {
+  float: left;
+  width: 40%;
+  /* background-color: #aed6a8; */
+}
+
+.portfolio {
+  width: 30%;
+  float: right;
+  text-align: center;
+  margin-top: 180px;
+  /* background-color: #ffb134; */
+}
+
+/* footer h1 {
+  background-color: #79c186;
+} */
+
+.breadcrumbContainer {
+  margin-top: 180px;
+}
+.breadcrumbContainer ul {
+  float: left;
+  width: 23%;
+  margin: 0 1%;
+  text-transform: capitalize;
+}
+
+.breadcrumbContainer ul li {
+  line-height: 28px;
+}
+.crumbline span {
+  color: tomato;
+}
+.breadcrumbContainer ul li a:hover,
+.crumbline a:hover {
+  text-decoration: underline;
+}
+
+.crumbline {
+  clear: both;
+  text-align: center;
+  padding-top: 120px;
+  color: #666;
+  letter-spacing: 1px;
+}
+.crumbline a {
+  color: #666;
+}
+
+.footerTitle {
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+/* overlay properties (a 100% w/h fixed container with blur and opacity */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+.modalOne,
+.modalTwo {
+  position: fixed;
+  overflow: scroll;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.closeModal1,
+.closeModal2 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal h2 {
+  font-size: 64px !important;
+}
+.modal p {
+  font-size: 18px;
+  line-height: 36px;
+  margin: 5% 0;
+}
+
+/* this will adapt the scroll behavior when the model is open */
+/* see: https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/ */
+.modalScroll {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.blogInfo {
+  height: 60px;
+  margin-top: 40px;
+}
+
+/* blog profile */
+.blogProfile {
+  width: 60px;
+  height: 60px;
+
+  display: block;
+  float: left;
+}
+
+.blogAuthor,
+.blogDate,
+.blogTags {
+  line-height: 60px !important;
+  font-size: 12px !important;
+  margin-top: 0px !important;
+  margin-left: 10px !important;
+  letter-spacing: 0.5 !important;
+  float: left;
+  /* font-weight: bold; */
+}
+.blogAuthor {
+  font-weight: bold;
+}
+.blogTags {
+  float: right;
+  border: rgba(0, 0, 0, 0.3) solid 1px;
+  padding: 0 20px;
+}
+
+.blogCopy {
+  clear: both;
+}
+
+.dropCap {
+  font-size: 42px;
+}
+
+xmp {
+  background-color: #eee;
+}
+
+.sources {
+  line-height: 18px !important;
+  margin: 20px 0 !important;
+}
+
+.sources:hover {
+  text-decoration: underline;
+}
+
+/* simple media queries just to make it not completely scuffed on smaller screens */
+
+@media screen and (max-width: 1170px) {
+  .blogCardsContainer {
+    width: 84%;
+  }
+  .hiddenMedia {
+    display: none;
+  }
+  .breadcrumbContainer ul {
+    width: 25%;
+    margin: 0 4%;
+  }
+}
