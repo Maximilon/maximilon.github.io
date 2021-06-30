@@ -317,3 +317,35 @@ footer h1 {
 .dropCap {
   font-size: 42px;
 }
+
+/* simple media queries just to make it not completely scuffed on smaller screens */
+@media screen and (max-width: 1460px) {
+  .blogCardsContainer {
+    width: 50%;
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .blogCardsContainer {
+    width: 75%;
+    background-color: yellow;
+  }
+  .hiddenMedia {
+    display: none;
+  }
+  .breadcrumbContainer ul {
+    width: 25%;
+    margin: 0 4%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .blogCardsContainer {
+    width: 90%;
+    background-color: blueviolet;
+  }
+  .hiddenMedia {
+    display: none;
+  }
+}

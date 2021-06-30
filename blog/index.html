@@ -79,7 +79,7 @@
             <li><a href="#">Diet</a></li>
             <li><a href="#">Life Philosophy</a></li>
           </ul>
-          <ul>
+          <ul class="hiddenMedia">
             <li class="footerTitle">Humanities</li>
             <li><a href="#">Sociology</a></li>
             <li><a href="#">Ethnomethodology</a></li>
@@ -105,11 +105,24 @@
         <p class="blogTags">Web Design</p>
       </div>
       
-      <p class="blogCopy"> <span class="dropCap">I</span> decided to build this site using an older layout technique (principally, the float method) due to some familiarity I had with it. My intention is to now refactor what I have done using the grid CSS property. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="blogCopy"> <span class="dropCap">T</span>he surest way to think about the float property is to first consider the way browsers render elements through a typical default flow. Browsers render the majority of html elements by default as block-level elements. A block-level element, for example, spans the full width of its container and has its height either relative to the hight of its content (text, images, other child elements, et cetera) or has its height pre-set with code. As a result, we can use this behaviour to stack elements on top of one another, like the name implies – as blocks. To illustrate, take the following exercise of stacking three squares of equal width and height on top of one another: </p>
+      <pre><xmp>
+        div {
+          width: 150px;
+          height: 100px;
+          background-color: red;
+        }
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+      </xmp></pre>
+      <p>This code will provide you with a pattern similar to this: </p>
+      <img src="images/blogs/blog-1/blockA.png" alt="#" width="33%" height="">
+      <p>But the question becomes: How do we get it to form into a pattern like this?</p>
+      <img src="images/blogs/blog-1/blockB.png" alt="#" width="100%">
+      
+      <p>To stack things like blocks, we use block level elements. We could covert these elements to have the display type of inline or inline-block. However by changing the display propety we can also interfer with other aspects of our behavior that may interrupt our goals later down the line. There is another way that we can congigure items that stack vertically, such as Figure A above, and items that stack horizontially, such as Figure B above. We use — you guessed it: Float!</p>
+      
       
     </div> 
     
