@@ -276,4 +276,44 @@ footer h1 {
   overflow-y: hidden;
 }
 
+.blogInfo {
+  height: 60px;
+  margin-top: 40px;
+}
+
 /* blog profile */
+.blogProfile {
+  width: 60px;
+  height: 60px;
+
+  display: block;
+  float: left;
+}
+
+.blogAuthor,
+.blogDate,
+.blogTags {
+  line-height: 60px !important;
+  font-size: 12px !important;
+  margin-top: 0px !important;
+  margin-left: 10px !important;
+  letter-spacing: 0.5 !important;
+  float: left;
+  /* font-weight: bold; */
+}
+.blogAuthor {
+  font-weight: bold;
+}
+.blogTags {
+  float: right;
+  border: rgba(0, 0, 0, 0.3) solid 1px;
+  padding: 0 20px;
+}
+
+.blogCopy {
+  clear: both;
+}
+
+.dropCap {
+  font-size: 42px;
+}
