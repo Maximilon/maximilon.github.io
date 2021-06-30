@@ -111,7 +111,7 @@ aside section {
 }
 /*create a container to hold all of the blog cards and center it */
 .blogCardsContainer {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
 }
 .blogCards {
@@ -324,13 +324,13 @@ xmp {
 
 .sources {
   line-height: 18px !important;
-
   margin: 20px 0 !important;
 }
 
 .sources:hover {
   text-decoration: underline;
 }
+
 /* simple media queries just to make it not completely scuffed on smaller screens */
 
 @media screen and (max-width: 1170px) {
