@@ -233,7 +233,9 @@ footer h1 {
 }
 
 .modalOne,
-.modalTwo {
+.modalTwo,
+.modalThree,
+.modalFour {
   position: fixed;
   overflow: scroll;
   height: 70%;
@@ -249,7 +251,9 @@ footer h1 {
 }
 
 .closeModal1,
-.closeModal2 {
+.closeModal2,
+.closeModal3,
+.closeModal4 {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
@@ -288,6 +292,10 @@ footer h1 {
 
   display: block;
   float: left;
+}
+
+.blogBanner {
+  width: 100%;
 }
 
 .blogAuthor,

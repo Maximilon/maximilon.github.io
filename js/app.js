@@ -4,12 +4,21 @@
 
 const modalOne = document.querySelector(".modalOne");
 const modalTwo = document.querySelector(".modalTwo");
-const overlay = document.querySelector(".overlay");
+const modalThree = document.querySelector(".modalThree");
+const modalFour = document.querySelector(".modalFour");
+
 const btnCloseModal1 = document.querySelector(".closeModal1");
 const btnCloseModal2 = document.querySelector(".closeModal2");
+const btnCloseModal3 = document.querySelector(".closeModal3");
+const btnCloseModal4 = document.querySelector(".closeModal4");
+
 const openModalOne = document.querySelectorAll(".openModalOne");
 const openModalTwo = document.querySelectorAll(".openModalTwo");
+const openModalThree = document.querySelectorAll(".openModalThree");
+const openModalFour = document.querySelectorAll(".openModalFour");
+
 const body = document.querySelector("body");
+const overlay = document.querySelector(".overlay");
 
 const openModal1 = function () {
   modalOne.classList.remove("hidden");
@@ -23,9 +32,23 @@ const openModal2 = function () {
   body.classList.add("modalScroll");
 };
 
+const openModal3 = function () {
+  modalThree.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.classList.add("modalScroll");
+};
+
+const openModal4 = function () {
+  modalFour.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.classList.add("modalScroll");
+};
+
 const closeModal = function () {
   modalOne.classList.add("hidden");
   modalTwo.classList.add("hidden");
+  modalThree.classList.add("hidden");
+  modalFour.classList.add("hidden");
   overlay.classList.add("hidden");
   body.classList.remove("modalScroll");
 };
@@ -40,6 +63,16 @@ for (let i = 0; i < openModalTwo.length; i++)
 btnCloseModal2.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
+for (let i = 0; i < openModalThree.length; i++)
+  openModalThree[i].addEventListener("click", openModal3);
+btnCloseModal3.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+for (let i = 0; i < openModalFour.length; i++)
+  openModalFour[i].addEventListener("click", openModal4);
+btnCloseModal4.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
 document.addEventListener("keydown", function (e) {
   // console.log(e.key);
 
@@ -50,9 +83,9 @@ document.addEventListener("keydown", function (e) {
 
 //functionaity for sticky header
 // When the user scrolls the page, execute myFunction
-window.onscroll = function () {
-  stickHeader();
-};
+// window.onscroll = function () {
+//   stickHeader();
+// };
 
 // // Get the header
 // const header = document.querySelector(".header");
