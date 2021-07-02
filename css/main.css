@@ -74,13 +74,15 @@ header nav {
 }
 header p a,
 .portfolio a {
-  border: 1px solid #e4e4e4;
-  padding: 20px;
-  text-transform: capitalize;
+  border: 1px solid #e4e4e4 !important;
+  padding: 20px !important;
+  text-transform: capitalize !important;
 }
+
 header p a:hover,
-.portfolio a:hover {
-  border-color: #000000;
+.portfolio a:hover,
+#activePort {
+  border-color: #000000 !important;
 }
 
 nav ul li {
