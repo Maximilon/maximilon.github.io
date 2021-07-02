@@ -235,7 +235,8 @@ footer h1 {
 .modalOne,
 .modalTwo,
 .modalThree,
-.modalFour {
+.modalFour,
+.modalFive {
   position: fixed;
   overflow: scroll;
   height: 70%;
@@ -253,7 +254,8 @@ footer h1 {
 .closeModal1,
 .closeModal2,
 .closeModal3,
-.closeModal4 {
+.closeModal4,
+.closeModal5 {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
@@ -271,6 +273,11 @@ footer h1 {
   font-size: 18px;
   line-height: 36px;
   margin: 5% 0;
+}
+
+.blog {
+  width: 60%;
+  margin: 0 auto;
 }
 
 /* this will adapt the scroll behavior when the model is open */

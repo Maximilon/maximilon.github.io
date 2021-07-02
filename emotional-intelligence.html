@@ -1,0 +1,179 @@
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-16NSJVG7Y0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16NSJVG7Y0');
+</script>
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2481416,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Maximilon | Blog Home</title>
+  </head>
+  <body>
+      <header>
+        <h1><a href="index.html">maximilon</a></h1>
+        <!-- <nav>
+          <ul>
+            <li><a href="#">about</a></li>
+            <li><a class="activeNav" href="#">blogs</a></li>
+            <li><a href="#">articles</a></li>
+          </ul>
+        </nav> -->
+        <p><a class="modalMode" href="portfolio.html">portfolio</a></p>
+      </header>
+    
+      <main>
+     
+       <section>
+           <article>
+            <!-- modalOne -->
+    <div class="modal blog"> 
+        
+        <h2>Outdated layout techniques? Reflecting on the Float Method.</h2>
+        <div class="blogInfo">
+          <img class="blogProfile" src="images/favicon.png" alt="Maximilon Baddeley">
+          <p class="blogAuthor">Maximilon Baddeley</p>
+          <p class="blogDate">Thu 1 Jul 10:00AM</p>
+          <!-- <p class="blogTags">Web Development</p>
+          <p class="blogTags">Web Design</p> -->
+        </div>
+        
+        <p class="blogCopy"> <span class="dropCap">T</span>he surest way to think about the float property is to first consider the way browsers render elements through a typical default flow. Browsers render the majority of html elements by default as block-level elements. A block-level element, for example, spans the full width of its container and has its height either relative to the hight of its content (text, images, other child elements, et cetera) or has its height pre-set with code. As a result, we can use this behaviour to stack elements on top of one another, like the name implies – as blocks. To illustrate, take the following exercise of stacking three squares of equal width and height on top of one another: </p>
+        <pre><xmp>
+          /* css */
+          div {
+            width: 150px;
+            height: 100px;
+            background-color: red;
+          }
+  
+          <!-- html-->
+          <div class="box1">box1</div>
+          <div class="box2">box2</div>
+          <div class="box3">box3</div>
+        </xmp></pre>
+        <p>The above code will provide you with a pattern similar to Figure A below: </p>
+        <img src="images/blogs/blog-1/blockA.png" alt="#" width="33%" height="">
+        <p>All is natural in the world. But how, if we do not want vertical-stack arrangements, do we stack elements horizontially as shown in Figure B below?</p>
+        <img src="images/blogs/blog-1/blockB.png" alt="#" width="100%">
+        
+        <p>One option we have available, is float:</p>
+        <pre><xmp>
+          div {
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            float: left; /* you could float left, right, or center */
+          }
+        </xmp></pre>
+          
+         <p>If the browser often stacks elements into block-level vertical stacks such as Figure A above, how do we stack them horizontially? There is another CSS property available to choose from, the display property, however, if we would like to retain the block level property to our elements this is not a good option because one aspect of block level elements is that they contain most of their box-model properties, such as margin. An alternative is available for us when we would like to create horizontially aligned block level items: The float property.</p>
+         
+         <p>Now having available to us a technique to choose from which aligns elements from vertical to horizontal configurations, we can start to manipulate box model properties and specify the shapes and spaces required of our particular design. For example, for this website, the header was built by using the float method. I did this by first creating a Figure B configuration and then adapting the width of certain elements, namely the logo, nav bar, and button. The below code is only a brief example of what this may look like:</p>
+  
+         <pre><xmp>
+           /* css */
+           header {
+             width: 100%
+             height: 200px;
+           }
+           h1 {
+             width: 25%;
+             float: left;
+           }
+           nav {
+             width: 50%;
+             float: left;
+           }
+           button {
+             width: 25%;
+             float: left;
+           }
+  
+          <!-- html-->
+          <header>
+              <h1>logo</h1>
+              <nav>
+                <ul>
+                  <li><a>item</a></li>
+                  <li><a>item</a></li>
+                  <li><a>item</a></li>
+                </ul>
+              </nav>
+              <button>button</button>
+          </header>
+        </xmp></pre>
+  
+        <p>By isolating three boxes and playing around with their dimensions a developer may find ways to create arragnments that work for their particular design. In any case I am happy to have introduced the basic principles of using the float method, albeit just the tip of the iceburg.</p>
+  
+        <p>Ultimately, the float method is used for older-browser versions. New layout techniques are avaialble for more modern user environments. For example, both flexbox and grid are now considered the industry stantard approaches for laying out web pages. Because of this, my next task in my HTML/CSS learning is to recode this website using both flexbox and grid whilst leaving float in the dust! Thanks for reading.</p>
+  
+        <h3>Sources</h3>
+        <p class="sources"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">https://developer.mozilla.org/en-US/docs/Web/CSS/float</a></p>
+        <p class="sources"><a href="https://www.w3schools.com/Css/css_float.asp">https://www.w3schools.com/Css/css_float.asp</a></p>
+        
+        
+      </div> 
+        </article>
+    </section>
+      </main>
+      <footer>
+        <h1><a href="#">maximilon</a></h1>
+        <div class="breadcrumbContainer">
+          <ul>
+            <li class="footerTitle">About</li>
+            <!-- <li><a href="#">my story</a></li> -->
+            <!-- <li><a href="#">contact</a></li>
+            <li><a href="#">skills</a></li>
+            <li><a href="#">Curriculum Vitae</a></li> -->
+            <li><a href="https://www.github.com/maximilon">Github</a></li>
+          </ul>
+          <ul>
+            <li class="footerTitle">Blogs</li>
+            <li><a href="emotional-intelligence.html">EQ & IQ</a></li>
+            <li><a href="css-float.html">CSS Float</a></li>
+            <li><a href="identity-values.html">Identity & Values</a></li>
+            <li><a href="lesson-plan.html">Lesson Plan</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+          </ul>
+          <!-- <ul>
+          <li class="footerTitle">Wellbeing</li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Diet</a></li>
+            <li><a href="#">Life Philosophy</a></li>
+          </ul>
+          <ul class="hiddenMedia">
+            <li class="footerTitle">Humanities</li>
+            <li><a href="#">Sociology</a></li>
+            <li><a href="#">Ethnomethodology</a></li>
+            <li><a href="#">User Research</a></li>
+            <li><a href="#">HCI</a></li>
+          </ul> -->
+          <!-- copy -->
+          <p class="crumbline">Coded with <span>&hearts;</span> in <a href="https://en.wikipedia.org/wiki/Wellington">Wellington.</a></p>
+        </div>
+        <p class="portfolio"><a href="#">portfolio</a></p>
+        <!-- act as a buffer container for right column-->
+      </footer>
+    </div>
+
+     
+    
+    <!-- script -->
+  </body>
+</html>
