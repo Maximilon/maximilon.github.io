@@ -362,3 +362,17 @@ xmp {
     margin: 0 4%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .blogCardsContainer {
+    width: 90%;
+  }
+  .hiddenMedia,
+  .blogCards a {
+    display: none;
+  }
+  .breadcrumbContainer ul {
+    width: 33%;
+    margin: 0 4%;
+  }
+}
