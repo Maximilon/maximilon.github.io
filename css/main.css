@@ -20,6 +20,10 @@ a {
 }
 /* set styles for modals */
 
+.blogCards img {
+  width: 100%;
+  margin-bottom: 5%;
+}
 /* set site font families and generic sizes" */
 h1,
 h2,
@@ -118,7 +122,6 @@ aside section {
 }
 .blogCards {
   margin-top: 10%;
-  height: 25%;
   padding: 10%;
   /* border: 1px solid #ffffff; */
 }
