@@ -110,3 +110,28 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+//========sticky nav==================
+
+const nav = document.querySelector(".nav");
+const header = document.querySelector(".header");
+
+//we can target the rootMargin dynamically.
+const navHeight = nav.getBoundingClientRect().height;
+
+const stickyNav = function (entries) {
+  const [entry] = entries; //destructing an array
+  //console.log(entry);
+
+  if (!entry.isIntersecting) nav.classList.add("sticky");
+  else nav.classList.remove("sticky");
+};
+
+//using intersection API to create sticky nav.
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null, //we are interested in the entire viewpoint
+  threshold: 0,
+  rootMargin: `-${navHeight}px`, //this will create a box of 90 pixels outside of out target element. This is the height of the navigation.
+});
+headerObserver.observe(header); //the element we are tracking
+console.log("hi");
