@@ -123,6 +123,7 @@ aside section {
 .blogCards {
   margin-top: 10%;
   padding: 10%;
+  background-color: #fcfbfb;
   /* border: 1px solid #ffffff; */
 }
 .blogCards p {
@@ -148,7 +149,7 @@ aside section {
 }
 .featuredBlogCard,
 .blogCards {
-  border: solid 1px #e4e4e4;
+  border: solid 1px #fcfbfb;
 }
 
 /* Footer styles */
@@ -221,6 +222,10 @@ footer h1 {
   margin-bottom: 18px;
 }
 
+.subHead {
+  clear: both;
+}
+
 /* overlay properties (a 100% w/h fixed container with blur and opacity */
 .overlay {
   position: fixed;
@@ -241,7 +246,8 @@ footer h1 {
 .modalTwo,
 .modalThree,
 .modalFour,
-.modalFive {
+.modalFive,
+.modalSix {
   position: fixed;
   overflow: scroll;
   height: 70%;
@@ -260,7 +266,8 @@ footer h1 {
 .closeModal2,
 .closeModal3,
 .closeModal4,
-.closeModal5 {
+.closeModal5,
+.closeModal6 {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
@@ -377,5 +384,23 @@ xmp {
   .breadcrumbContainer ul {
     width: 33%;
     margin: 0 4%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  header h1 {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    line-height: 15;
+  }
+  header nav,
+  header p {
+    line-height: normal;
+    padding: 0 80px;
   }
 }

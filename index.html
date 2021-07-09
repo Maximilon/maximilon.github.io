@@ -30,11 +30,11 @@
         <nav>
           <ul>
             <!-- <li><a href="#">about</a></li> -->
-            <li><a class="activeNav" href="#">blogs</a></li>
+            <li><a class="hide activeNav" href="#">blogs</a></li>
             <!-- <li><a href="#">articles</a></li> -->
           </ul>
         </nav>
-        <p><a class="modalMode" href="portfolio.html">portfolio</a></p>
+        <p><a class="modalMode hide" href="portfolio.html">portfolio</a></p>
       </header>
     
       <main>
@@ -49,6 +49,12 @@
                 <p>blog snippet...</p>
                 <a href="#">read more</a>
             </article> --> 
+            <article class="blogCards openModalSix">
+              <img src="images/blogs/blog-6/javascript.png" alt="#">
+              <h2>Javascript Reflection</h2>
+              <p>Hypertext Markup Language (HTML) and Cascading Style Sheets (CSS) are two technologies used to organise and describe content on websites. To understand the differences between the two languages  ... </p>
+              <a href="#">read more</a>
+          </article>
             <article class="blogCards openModalFive">
                 <img src="images/blogs/blog-5/intelligence.jpeg" alt="#">
                 <h2>Emotional & Intellectual Intelligence.</h2>
@@ -82,9 +88,9 @@
         </section>
       </main>
       <footer>
-        <h1><a href="maximilon.html">maximilon</a></h1>
+        <h1><a href="maximilon.html" class="hide">maximilon</a></h1>
         <div class="breadcrumbContainer">
-          <ul>
+          <ul class="hide">
             <li class="footerTitle">About</li>
             <!-- <li><a href="#">my story</a></li> -->
             <!-- <li><a href="#">contact</a></li>
@@ -94,6 +100,7 @@
           </ul>
           <ul>
             <li class="footerTitle">Blogs</li>
+            <li><a href="javascript-dom.html">Javascript Reflections</a></li>
             <li><a href="emotional-intelligence.html">EQ & IQ</a></li>
             <li><a href="css-float.html">CSS Float</a></li>
             <li><a href="identity-values.html">Identity & Values</a></li>
@@ -116,10 +123,51 @@
           <!-- copy -->
           <p class="crumbline">Coded with <span>&hearts;</span> in <a href="https://en.wikipedia.org/wiki/Wellington">Wellington.</a></p>
         </div>
-        <p class="portfolio"><a href="portfolio.html">portfolio</a></p>
+        <p class="portfolio hide"><a href="portfolio.html">portfolio</a></p>
         <!-- act as a buffer container for right column-->
       </footer>
     </div>
+
+     <!-- modalSix-->
+     <div class="modal modalSix hidden"> 
+      <button class="closeModal6">&times;</button>
+      <h2>Javascript Reflections</h2>
+      <div class="blogInfo">
+        <img class="blogProfile" src="images/favicon.png" alt="Maximilon Baddeley">
+        <p class="blogAuthor">Maximilon Baddeley</p>
+        <p class="blogDate">Thu 9 Jul 5:00PM</p>
+        <!-- <p class="blogTags">Web Development</p>
+        <p class="blogTags">Web Design</p> -->
+      </div>
+      
+      <h3 class="subHead">What's the difference between HTML & CSS?</h3>
+    
+      <p class="blogCopy"> <span class="dropCap">H</span>ypertext Markup Language (HTML) and Cascading Style Sheets (CSS) are two technologies used to organise and describe content on websites. To understand the differences between the two languages we first need to understand how each are involved in the process of building websites.</p>
+  
+      <p>If we take a generic magazine for example, we can see its cover as typically consisting of a title, an image, an author name, and some paragraph text. These items according to html are pieces of content and can be categorised or described by using an html tag or element. For example, an title would be suited for a &lt;h1&gt; element, an image would suit a &lt;img&gt; element, an author name or paragraph text may be represented with a &lt;p&gt; tag. These HTML elements (h1, img, p) are ‘marking up’ the magazine content into categories. These labels only have one purpose: To describe the content they keep. Web browsers use these descriptions to provide semantic meaning to them with code. In short, breaking down content into categories, little descriptive elements, help ‘wrap’ that content and ‘mark it up’ so hypertexts (the underlying technology of the world wide web) become operational. </p> 
+
+      <p>Once the content of a website has been described in HTML, a developer may wish to change the way this content looks. Realising this aesthetic goal is achievable thanks to CSS. With this technology, we may select our earlier described pieces of content and apply instructions to them directly. A simple example may be to change the font style or colour of a title. To do this, we would first ask the browser to find our previously described &lt;h1&gt; and then ask it to add a style to this element (font-family: Helvetica;) as an example. Consequently, if HTML is used to structure and organise content, CSS is used to instruct the way it looks using a large number of built-in properties taken from the design world.</p> 
+      
+      <p>In sum, a useful analogy to help understand these differences between the languages (the structural and the aesthetic) may be to think of HTML as the work of collecting, organising, labelling, and then transporting building supplies to a customer in the form of a kit-set, like an Ikea Wooden Desk. Once this kit-set has arrived to the customer safely, these materials are unpacked and ready to be assembled. With each item in hand, it is now time to pick up the instructions and follow them, assembling each component piece-by-piece. For example, “select the screw b1 and then add it to the left leg” is not distant from a common CSS instruction. In this way, the difference between HTML and CSS wrests in the way the materials are organised and assembled and then require further instruction for an assembly to take place. Both HTML and CSS work together to make a website.</p>
+
+      <h3>if(Control Flow)</h3>
+      <p>Control flow is a programmer’s term to describe a logical operation. But prior to understanding this it may be beneficial to understand that machines execute instructions one at a time. This sequentiality is definite. That is, one instruction, always follows another next. Electronic computers are capable of following these instructions, fast (think millions may happen per second!). Given this backdrop to the technology we are working with, we may ask: what happens when we want to return to instructions that we have already given? Control flow helps with this. </p>
+
+      <p>One evening this week we may decide to follow a newly found risotto recipe and cook a meal from scratch. To do this we (1) purchase the ingredients from the list; (2) prepare them. We are now ready to cook. Step one is to add oil to a pan and heat it up. Step two is to then add onions to soften. While these onions are softening we are to cut the mushrooms. So far, these instructions are sequential: one follows another next. We could potentially cook an entire meal in this way without running into any major issues. But say, during this process, we hear the doorbell ring and go to answer it, during which, our onions start to burn. Upon returning to the kitchen we are greeted with our onions engulfed in flames. Panic mode, we ought to swiftly react and douse the flames, yet the beginnings of our meal may be ruined in the aftermath and we will have to start over again. Rather, we continue on with the instructions. Next we add the risotto rice to brown alongside the flaming, burning onion. Eventually we finish following the recipe and end up with a less than desirable meal.</p>
+
+      <p>In this case, we ought to have stopped cooking much earlier but we have not accounted for contingencies in our instructions. In a way, they were instructions that took for granted that other contextual factors such as people ringing our doorbells would be dealt to. Alongside it being impossible to write every contingency possible, computers, unfortunately, do not have this luxury to understand context like humans do. As the saying goes, machines are dumb but very very fast. </p>
+
+      <p>Control statements allow us to ask certain conditions to our set of instructions which in turn adapt the flow of events. For example, we could have expressed a condition for our cooking: If (and only if) our onions are soft, then remove them from the heat, otherwise keep cooking. In terms of programming we now have two options: If the first condition (onions are soft) is true, then take them off the heat. Else (the onions are not soft) which is false, then continue to cook them. This binary representation (true or false) is a Boolean condition. It is also fundamental to machines (1 or 0). This is to do with the physical circuit boards themselves. Electricity, as far as we know as a human species only has two states: it is either positive or negative. Given this, we can build machines that represent these two states and control the flow of electricity of the circuity. There is a reason that machines are plugged into walls and draw their power from the public generation of energy stored on the power grid. This is very abstract and low-level however. For our purposes here, we can understand control flow as ‘conditional’. That is, if one condition is true, do that, otherwise, do something else. </p>
+
+      <p>Loops are similar in the sense that they ask if a condition is true. For example, if our onions are cooked. If this condition is true, then we ask that condition again. How this is different is the second testing. This principal is called recursion. Recursion allows us to create ‘loops’ where we keep returning to the condition asking whether it is true or not. As already mentioned, because computers are very fast, recursion happens really fast. In fact the fact we can read anything on a machine in the first place is because of a loop asking if the power is turned on. In more practical terms, loops typically are used to count things until a condition is false. Or, iterate though a list of things and find occurrences of matches.</p>
+
+      <h3>What's the deal with DOM?</h3>
+      <p>The Document Object Model (DOM) is a native browser based Application Programming Interface (API). What this means is that the people who create web browsers have built into that software a way for other programmers to talk to web browsers through code at a higher level. When a web page is loaded for example, the browser automatically creates a representation of that web page using the DOM. It is important to recognise that the DOM is separate from the HTML document. When we manipulate the DOM we are not manipulating the HTML document. Typically, JavaScript is the language which interacts with the DOM. We may for example have designed a website that we want to change the appearance into ‘dark mode or light mode’. To organise this code we build a button that when pushes changes the styles to match the associated theme. A user story or sequence may be as follows: the user pushes the button; the browser registers that click and then adds a class to the DOM called ‘theme’. This class toggles between two states. If the user presses the button again, the theme is thus toggled. In this way the DOM sits between the browser and the programmer’s code. It is an intermediary between both code bases and it facilitates communication between them.</p>
+<h3>Common data structures</h3>
+      <p>Accessing data from arrays and objects differ in one main way: keys. Arrays have key-value pairs whereas objects have properties. Fruit[0] for example is the index of the first item of a list of fruits. Whereas a fruit object would contain more associative key’s that describe properties, such as sugar content, price, weight, colour, and so on. In sum, both arrays and objects are data structures but they are used to organise data in very specific and distinct ways. Arrays are variables that have multiple data values whereas objects are containers that store properties of variables. </p>
+      <h3>Functions()</h3>
+      <p>Functions are useful for various reasons such as when we would like to repeat a set of previously issued instructions. This reusability of sections of code are what make functions powerful. A function is thus a block of code designed to perform a particular task. In our cooking example we had to cook onions. I am sure we have cooked onions many times before in our lives. This function of ‘cooking onions’ is thus repeated and reusable every time we would like to cook onions. Consequently, when we code a series of instructions, we may find ourselves in a situation that we would like to repeat earlier sections of code. Functions provide us with this functionality, no pun intended.</p>
+    </div> 
 
      <!-- modalFive -->
      <div class="modal modalFive hidden"> 
