@@ -33,6 +33,7 @@ h5,
 h6,
 header h1 a,
 footer h1 a {
+  /* color: rgba(255, 255, 255, 0) !important; */
   font-family: roboto;
   font-size: 24px !important;
 }
@@ -64,9 +65,18 @@ header {
 }
 header h1 {
   width: 30%;
+
   text-align: center;
   text-transform: uppercase;
   /* background-color: #ffb134; */
+  /* background-clip: text;
+  -webkit-background-clip: text; */
+
+  /* background styles */
+  /* background-image: url("../images/background-red-fireworks.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
 }
 header h1 a:hover {
   cursor: pointer;
