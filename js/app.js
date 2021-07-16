@@ -8,6 +8,8 @@ const modalThree = document.querySelector(".modalThree");
 const modalFour = document.querySelector(".modalFour");
 const modalFive = document.querySelector(".modalFive");
 const modalSix = document.querySelector(".modalSix");
+const modalSeven = document.querySelector(".modalSeven");
+const modalEight = document.querySelector(".modalEight");
 
 const btnCloseModal1 = document.querySelector(".closeModal1");
 const btnCloseModal2 = document.querySelector(".closeModal2");
@@ -15,6 +17,8 @@ const btnCloseModal3 = document.querySelector(".closeModal3");
 const btnCloseModal4 = document.querySelector(".closeModal4");
 const btnCloseModal5 = document.querySelector(".closeModal5");
 const btnCloseModal6 = document.querySelector(".closeModal6");
+const btnCloseModal7 = document.querySelector(".closeModal7");
+const btnCloseModal8 = document.querySelector(".closeModal8");
 
 const openModalOne = document.querySelectorAll(".openModalOne");
 const openModalTwo = document.querySelectorAll(".openModalTwo");
@@ -22,6 +26,8 @@ const openModalThree = document.querySelectorAll(".openModalThree");
 const openModalFour = document.querySelectorAll(".openModalFour");
 const openModalFive = document.querySelectorAll(".openModalFive");
 const openModalSix = document.querySelectorAll(".openModalSix");
+const openModalSeven = document.querySelectorAll(".openModalSeven");
+const openModalEight = document.querySelectorAll(".openModalEight");
 
 const body = document.querySelector("body");
 const overlay = document.querySelector(".overlay");
@@ -62,6 +68,18 @@ const openModal6 = function () {
   body.classList.add("modalScroll");
 };
 
+const openModal7 = function () {
+  modalSeven.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.classList.add("modalScroll");
+};
+
+const openModal8 = function () {
+  modalEight.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.classList.add("modalScroll");
+};
+
 const closeModal = function () {
   modalOne.classList.add("hidden");
   modalTwo.classList.add("hidden");
@@ -69,6 +87,8 @@ const closeModal = function () {
   modalFour.classList.add("hidden");
   modalFive.classList.add("hidden");
   modalSix.classList.add("hidden");
+  modalSeven.classList.add("hidden");
+  modalEight.classList.add("hidden");
   overlay.classList.add("hidden");
   body.classList.remove("modalScroll");
 };
@@ -101,6 +121,16 @@ overlay.addEventListener("click", closeModal);
 for (let i = 0; i < openModalSix.length; i++)
   openModalSix[i].addEventListener("click", openModal6);
 btnCloseModal6.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+for (let i = 0; i < openModalSeven.length; i++)
+  openModalSeven[i].addEventListener("click", openModal7);
+btnCloseModal7.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+for (let i = 0; i < openModalEight.length; i++)
+  openModalEight[i].addEventListener("click", openModal8);
+btnCloseModal8.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", function (e) {
