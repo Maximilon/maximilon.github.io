@@ -257,7 +257,9 @@ footer h1 {
 .modalThree,
 .modalFour,
 .modalFive,
-.modalSix {
+.modalSix,
+.modalSeven,
+.modalEight {
   position: fixed;
   overflow: scroll;
   height: 70%;
@@ -277,7 +279,9 @@ footer h1 {
 .closeModal3,
 .closeModal4,
 .closeModal5,
-.closeModal6 {
+.closeModal6,
+.closeModal7,
+.closeModal8 {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
