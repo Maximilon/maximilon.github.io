@@ -195,12 +195,17 @@ footer h1 {
   background-color: #79c186;
 } */
 
+a.external[target="_blank"]::after {
+  content: url("../images/blank.png");
+  margin: 0px 3px 0px 5px;
+}
+
 .breadcrumbContainer {
   margin-top: 180px;
 }
 .breadcrumbContainer ul {
   float: left;
-  width: 23%;
+  width: 31%;
   margin: 0 1%;
   text-transform: capitalize;
 }
