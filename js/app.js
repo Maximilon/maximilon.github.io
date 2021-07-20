@@ -10,7 +10,7 @@ const modalFive = document.querySelector(".modalFive");
 const modalSix = document.querySelector(".modalSix");
 const modalSeven = document.querySelector(".modalSeven");
 const modalEight = document.querySelector(".modalEight");
-const modalNine = document.querySelector(".modalEight");
+const modalNine = document.querySelector(".modalNine");
 
 const btnCloseModal1 = document.querySelector(".closeModal1");
 const btnCloseModal2 = document.querySelector(".closeModal2");
@@ -30,7 +30,7 @@ const openModalFive = document.querySelectorAll(".openModalFive");
 const openModalSix = document.querySelectorAll(".openModalSix");
 const openModalSeven = document.querySelectorAll(".openModalSeven");
 const openModalEight = document.querySelectorAll(".openModalEight");
-const openModalNine = document.querySelectorAll(".openModalEight");
+const openModalNine = document.querySelectorAll(".openModalNine");
 
 const body = document.querySelector("body");
 const overlay = document.querySelector(".overlay");
@@ -180,4 +180,4 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(header); //the element we are tracking
-console.log("hi");
+//
