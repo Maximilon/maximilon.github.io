@@ -10,6 +10,7 @@ const modalFive = document.querySelector(".modalFive");
 const modalSix = document.querySelector(".modalSix");
 const modalSeven = document.querySelector(".modalSeven");
 const modalEight = document.querySelector(".modalEight");
+const modalNine = document.querySelector(".modalEight");
 
 const btnCloseModal1 = document.querySelector(".closeModal1");
 const btnCloseModal2 = document.querySelector(".closeModal2");
@@ -19,6 +20,7 @@ const btnCloseModal5 = document.querySelector(".closeModal5");
 const btnCloseModal6 = document.querySelector(".closeModal6");
 const btnCloseModal7 = document.querySelector(".closeModal7");
 const btnCloseModal8 = document.querySelector(".closeModal8");
+const btnCloseModal9 = document.querySelector(".closeModal8");
 
 const openModalOne = document.querySelectorAll(".openModalOne");
 const openModalTwo = document.querySelectorAll(".openModalTwo");
@@ -28,6 +30,7 @@ const openModalFive = document.querySelectorAll(".openModalFive");
 const openModalSix = document.querySelectorAll(".openModalSix");
 const openModalSeven = document.querySelectorAll(".openModalSeven");
 const openModalEight = document.querySelectorAll(".openModalEight");
+const openModalNine = document.querySelectorAll(".openModalEight");
 
 const body = document.querySelector("body");
 const overlay = document.querySelector(".overlay");
@@ -80,6 +83,12 @@ const openModal8 = function () {
   body.classList.add("modalScroll");
 };
 
+const openModal9 = function () {
+  modalNine.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.classList.add("modalScroll");
+};
+
 const closeModal = function () {
   modalOne.classList.add("hidden");
   modalTwo.classList.add("hidden");
@@ -89,6 +98,7 @@ const closeModal = function () {
   modalSix.classList.add("hidden");
   modalSeven.classList.add("hidden");
   modalEight.classList.add("hidden");
+  modalNine.classList.add("hidden");
   overlay.classList.add("hidden");
   body.classList.remove("modalScroll");
 };
@@ -133,6 +143,11 @@ for (let i = 0; i < openModalEight.length; i++)
 btnCloseModal8.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
+for (let i = 0; i < openModalNine.length; i++)
+  openModalNine[i].addEventListener("click", openModal9);
+btnCloseModal9.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
 document.addEventListener("keydown", function (e) {
   // console.log(e.key);
 
@@ -163,5 +178,6 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   threshold: 0,
   rootMargin: `-${navHeight}px`, //this will create a box of 90 pixels outside of out target element. This is the height of the navigation.
 });
+
 headerObserver.observe(header); //the element we are tracking
 console.log("hi");
